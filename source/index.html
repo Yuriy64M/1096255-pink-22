@@ -14,48 +14,48 @@
       </a>
 
       <nav class="navigation">
-        <ul class="navigation-list navigation-list--wrapper">
-          <li class="navigation_item">
+        <ul class="navigation__list navigation__list--wrapper">
+          <li class="navigation__item">
             <a href="#">главная</a>
           </li>
-          <li class="navigation_item">
+          <li class="navigation__item">
             <a href="#">Фотографии</a>
           </li>
-          <li class="navigation_item">
+          <li class="navigation__item">
             <a href="#">конкурс</a>
           </li>
-          <li class="navigation_item">
+          <li class="navigation__item">
             <a href="#">html academy</a>
           </li>
         </ul>
       </nav>
 
-      <button type="button" class="navigation_toggle navigation_toggle--position">
-        <img src="img/open-menu-btn.svg" class="" height="24" width="50" alt="меню-гамбургер">
+      <button type="button" class="page-header__toggle page-header__toggle--position">
+        <img src="img/open-menu-btn.svg" class="toggle__burger" height="24" width="50" alt="меню-гамбургер">
       </button>
-      <button type="button" class="navigation_toggle navigation_toggle--position">
-        <img src="img/close-menu-btn.svg" class="" height="23" width="23" alt="крестик-закрытие меню">
+      <button type="button" class="page-header__toggle page-header__toggle--position">
+        <img src="img/close-menu-btn.svg" class="toggle__cross" height="23" width="23" alt="крестик-закрытие меню">
       </button>
 
-      <section class="header__description">
-        <h2 class="header__subtitle">Взгляни на жизнь иначе!</h2>
+      <section class="page-header__header-description">
+        <h2 class="header-description__subtitle">Взгляни на жизнь иначе!</h2>
 
         <img src="img/phone.png"  class="phone phone--pink" height="286" width="320" alt="фото здания в мобильнике, украшенное розовым фоном, на фоне этого же здание, затененного серым">
         <button type="button" class="download">Скачать приложение</button>
 
-        <ul class="operating-system__list">
-          <li class="operating-system__item">
+        <ul class="operating-systems">
+          <li class="operating-systems__item">
             <img class="apple-logo" src="img/apple-logo.svg" alt="иконка apple"  height="56" width="47">
           </li>
-          <li class="operating-system__item">
+          <li class="operating-systems__item">
             <img class="android-logo" src="img/android-logo.svg" alt="иконка android"  height="56" width="47">
           </li>
-          <li class="operating-system__item">
+          <li class="operating-systems__item">
             <img class="microsoft-logo" src="img/microsoft-logo.svg" alt="иконка microsoft"  height="56" width="47">
           </li>
         </ul>
 
-        <p class="header__description__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="header-description__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
     </header>
 
@@ -84,57 +84,100 @@
             </li>
           </ul>
 
-          <img class="phone phone--smile" src="img/phone.svg" height="320" width="157" alt="фото на телефоне затененное розовым фоном со смайликом">
+          <img class="advantages__phone advantages__phone--smile" src="img/phone.svg" height="320" width="157" alt="фото на телефоне затененное розовым фоном со смайликом">
         </div>
 
 
 
       </section>
 
-      <section class="comments">
+      <section class="reviews">
 
         <h2 class="visually-hidden">Комментарии</h2>
 
-        <blockquote class="review">
-          <cite class="review__autor">Николай Петров</cite>
-          <p class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+        <blockquote class="comment">
+          <cite class="comment__autor">Николай Петров</cite>
+          <p class="comment__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-        </blockquote>
 
-        <button type="button" class="slide-button"></button>
-        <button type="button" class="slide-button"></button>
-        <button type="button" class="slide-button"></button>
+          <button type="button" class="comment__slide-button"></button>
+          <button type="button" class="comment__slide-button"></button>
+          <button type="button" class="comment__slide-button"></button>
+        </blockquote>
 
       </section>
 
       <section class="offers">
         <h2 class="visually-hidden">Предложение и цены приложения</h2>
 
-        <h3 class="offer-standart">Стандарт <span class="price">3,99 USD</span></h3>
-        <ul class="offer-discription-list">
-          <li class="offer-discription-item">Розовый фильтр</li>
-          <li class="offer-discription-item">Смайлики</li>
-          <li class="offer-discription-item">Комментарии</li>
-        </ul>
+        <table class="offers__table">
+          <tr class="table__first-row">
+            <th></th>
+            <th class="first-row__date">База<br> <span class="price">1,99 USD</span></th>
+            <th class="first-row__date">Стандарт<br> <span class="price">3,99 USD</span></th>
+            <th class="first-row__date">Анлим<br> <span class="price">9,99 USD</span></th>
+          </tr>
+          <tr class="table__other-row">
+            <td>Розовый фильтр</td>
+            <td>
+              <img class="check" src="img/yes.svg" alt="зеленая галочка">
+            </td>
+            <td>
+              <img class="check" src="img/yes.svg" alt="зеленая галочка">
+            </td>
+            <td>
+              <img class="check" src="img/yes.svg" alt="зеленая галочка">
+            </td>
+          </tr>
+          <tr class="table__other-row">
+            <td>Смайлики</td>
+            <td>
+              <img class="check" src="img/no.svg" alt="крестик">
+            </td>
+            <td>
+              <img class="check" src="img/yes.svg" alt="зеленая галочка">
+            </td>
+            <td>
+              <img class="check" src="img/yes.svg" alt="зеленая галочка">
+            </td>
+          </tr>
+          <tr class="table__other-row">
+            <td>Комментарии</td>
+            <td>
+              <img class="check" src="img/no.svg" alt="крестик">
+            </td>
+            <td>
+              <img class="check" src="img/no.svg" alt="крестик">
+            </td>
+            <td>
+              <img class="check" src="img/yes.svg" alt="зеленая галочка">
+            </td>
+          </tr>
+        </table>
 
+        <button class="offers__button" type="button"></button>
+        <button class="offers__button" type="button"></button>
+        <button class="offers__button" type="button"></button>
       </section>
 
       <section class="contacts">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="contacts__list">
-          <li class="contact__item">
+
+          <div class="contacts__item">
             <h3 class="contacts__subtitle">Звоните:</h3>
             <a class="phone-number" href="tel:+78125556666" >+7 (812) 555-66-66</a>
-          </li>
-          <li class="contact__item">
+          </div>
+
+          <div class="contacts__item">
             <h3 class="contacts__subtitle">Пишите:</h3>
             <a class="contact-mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contact__item">
+          </div>
+
+          <div class="contacts__item">
             <h3 class="contacts__subtitle">Приезжайте в гости:</h3>
             <p class="address">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
+          </div>
+
 
         <img class="map" src="img/map.png" height="200" width="320" alt="местонахождение на карте">
 
@@ -144,14 +187,12 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">дополнительные ссылки</h2>
-      <ul class="page-footer__list">
 
-        <li class="page-footer__item">
+        <div class="page-footer__logo">
           <a href="#" class="">
-            <img src="img/pink.svg" height="23" width="74" class="" alt="логотип">
+            <img class="page-footer__logo-image" src="img/pink.svg" height="23" width="74"  alt="логотип">
           </a>
-        </li>
-        <li class="page-footer__item">
+        </div>
 
           <ul class="social-list">
             <li class="social-item">
@@ -171,13 +212,12 @@
             </li>
           </ul>
 
-        </li>
-        <li class="page-footer__item">
+        <div class="page-footer__designed">
           <span class="designed-by">Разработано</span>
           <a href="#">
-            <img src="img/htmlacademy.svg" height="34" width="27" alt="логотип htmlacademy">
+            <img class="academy-logo" src="img/htmlacademy.svg" height="34" width="27" alt="логотип htmlacademy">
           </a>
-        </li>
+        </div>
 
       </ul>
 
