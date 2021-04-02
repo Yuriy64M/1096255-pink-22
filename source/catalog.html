@@ -45,23 +45,29 @@
 
     <main class="catalog-main">
 
+
+
       <section class="photo-list">
         <h2 class="photo-list__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+
+        <div class="day-photo">
+          <a class="day-photo__link-photo" href="#">
+            <img src="img/catalog/panorama-tablet.png" alt="панорама с фуникулера">
+          </a>
+            <span class="day-photo__text">Панорама дня</span>
+          <blockquote class="blockquote">
+            <cite class="blockquote__autor">Анна</cite>
+            <time class="blockquote__time" datetime="2059-06-28">(5 минут назад)</time>
+            <p class="blockquote__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="blockquote__like">Нравится: 215</p>
+          </blockquote>
+        </div>
+
         <ul class="quotes">
           <li class="quotes__item">
-            <img src="img/catalog/panorama-tablet.png" alt="панорама с фуникулера">
-            <div class="day-photo">
-              <span class="day-photo__text">Панорама дня</span>
-            </div>
-            <blockquote class="blockquote">
-              <cite class="blockquote__autor">Анна</cite>
-              <time class="blockquote__time" datetime="2059-06-28">(5 минут назад)</time>
-              <p class="blockquote__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="blockquote__like">Нравится: 215</p>
-            </blockquote>
-          </li>
-          <li class="quotes__item">
-            <img src="img/catalog/photo-1-mobile.png" alt="фото авто">
+            <a href="#">
+              <img src="img/catalog/photo-1-mobile.png" alt="фото авто">
+            </a>
             <blockquote class="blockquote">
               <cite class="blockquote__autor">Левон</cite>
               <time class="blockquote__time" datetime="2059-06-28">(5 часов назад)</time>
@@ -70,7 +76,9 @@
             </blockquote>
           </li>
           <li class="quotes__item">
-            <img src="img/catalog/photo-2-drums.png" alt="барабанная установка">
+            <a href="#">
+              <img src="img/catalog/photo-2-drums.png" alt="барабанная установка">
+            </a>
             <blockquote class="blockquote">
               <cite class="blockquote__autor">Антон</cite>
               <time class="blockquote__time" datetime="2059-06-28">(12 часов назад)</time>
@@ -79,7 +87,9 @@
             </blockquote>
           </li>
           <li class="quotes__item">
-            <img src="img/catalog/photo-3-sky.png" alt="облака за стеклом">
+            <a href="#">
+              <img src="img/catalog/photo-3-sky.png" alt="облака за стеклом">
+            </a>
             <blockquote class="blockquote">
               <cite class="blockquote__autor">Борис</cite>
               <time class="blockquote__time" datetime="2059-06-28">(20 часов назад)</time>
@@ -88,7 +98,9 @@
             </blockquote>
           </li>
           <li class="quotes__item">
-            <img src="img/catalog/photo-4-market.png" alt="Кубанская бахча">
+            <a href="#">
+              <img src="img/catalog/photo-4-market.png" alt="Кубанская бахча">
+            </a>
             <blockquote class="blockquote">
               <cite class="blockquote__autor">Сергей</cite>
               <time class="blockquote__time" datetime="2059-06-28">(25 часов назад)</time>
@@ -97,7 +109,9 @@
             </blockquote>
           </li>
           <li class="quotes__item">
-            <img src="img/catalog/mountains.png" alt="ноги на склоне горы">
+            <a href="#">
+              <img src="img/catalog/mountains.png" alt="ноги на склоне горы">
+            </a>
             <blockquote class="blockquote">
               <cite class="blockquote__autor">Максим</cite>
               <time class="blockquote__time" datetime="2059-06-28">(40 часов назад)</time>
@@ -106,7 +120,9 @@
             </blockquote>
           </li>
           <li class="quotes__item">
-            <img src="img/catalog/airplane.png" alt="самолет на фоне солнца">
+            <a href="#">
+              <img src="img/catalog/airplane.png" alt="самолет на фоне солнца">
+            </a>
             <blockquote class="blockquote">
               <cite class="blockquote__autor">Надежда</cite>
               <time class="blockquote__time" datetime="2059-06-28">(45 часов назад)</time>
@@ -124,15 +140,23 @@
           <button class="catalog-form__button" type="button" name="button">
             <img src="img/catalog/crop.svg" alt="уменьшение фотографии">
           </button>
+          <input class="catalog-form__range" type="range" min="1" max="100" id="rangeCrop">
+          <label class="visually-hidden" for="rangeCrop">диапазон изменения размера фотографии</label>
+
           <button class="catalog-form__button" type="button" name="button">
             <img src="img/catalog/fill.svg" alt="наполненнось">
           </button>
+          <input class="catalog-form__range" type="range" min="1" max="100" id="rangeFill">
+          <label class="visually-hidden" for="rangeFill">диапазон изменения наполненности фотографии</label>
+
           <button class="catalog-form__button" type="button" name="button">
             <img src="img/catalog/contrast.svg" alt="контраст">
           </button>
-          <input class="catalog-form__range" type="range" min="1" max="100" >
+          <input class="catalog-form__range" type="range" min="1" max="100" id="rangeContrast">
+          <label class="visually-hidden" for="rangeContrast">диапазон изменения контрастности фотографии</label>
+
           <div class="your-photo__move">
-            <button class="your-photo__button гpload-button" type="button">Запостить</button>
+            <button class="your-photo__button upload-button" type="button">Запостить</button>
             <button class="your-photo__button сancel-button" type="button">Отмена</button>
           </div>
         </form>
@@ -148,7 +172,7 @@
             <img src="img/pink.svg" height="23" width="74"  alt="логотип">
           </a>
         </div>
-р
+
           <ul class="social-list">
             <li class="social-list__item">
               <a class="twitter-picture" href="#">
