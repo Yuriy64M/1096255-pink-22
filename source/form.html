@@ -1,53 +1,158 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body>
 
-    <header class="">
+    <header class="header">
 
+      <a class="header__logo-image" href="!#">
+        <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
+      </a>
+
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--wrapper">
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">html academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="header__toggle header__toggle--position">
+        <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
+      </button>
+      <button type="button" class="header__toggle header__toggle--position">
+        <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
+      </button>
+
+      <section class="header__header-description">
+        <h2 class="header__subtitle">Конкурс на самое безбашенное путешествие с Пинк!</h2>
+      </section>
     </header>
 
-    <main class="">
-      <h1 class="visually-hidden"></h1>
-      <p class="">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-      <form class="" action="index.html" method="post">
-        <fieldset class="">
-          <legend class="">Личные данные</legend> <!--вероятно не нужно-->
-
+    <main class="form-main">
+      <h1 class="form-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h1>
+      <form class="form" action="index.html" method="post">
+        <fieldset class="form-name">
+          <legend class="visually-hidden">Личные данные</legend>
+          <label class="form-name__label" for="surname">Фамилия:</label>
+          <input class="form-name__input" type="text" name="familyName" placeholder="Укажите фамилию *" id="surname">
+          <label class="form-name__label" for="yourName">Имя:</label>
+          <input class="form-name__input" type="text" name="Name" placeholder="Введите ваше имя *" id="yourName">
+          <label class="form-name__label" for="patronymic">Отчество</label>
+          <input class="form-name__input" type="text" name="fatherName" placeholder="Ну и отчество тоже" id="patronymic">
         </fieldset>
-        <fieldset class="">
-          <legend class="">Ваши безбашенные достижения в путешествии</legend>
 
+        <fieldset class="achievements">
+          <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
+          <input class="achievements__input" type="checkbox" name="selfy" id="idSelfy" checked>
+          <label class="achievements__label" for="idSelfy">Сделал селфи с акулой</label>
+
+          <input class="achievements__input" type="checkbox" name="beach" id="idBeach" checked>
+          <label class="achievements__label" for="idBeach">Обгорел на пляже</label>
+
+          <input class="achievements__input" type="checkbox" name="Norris" id="idNorris" >
+          <label class="achievements__label" for="idNorris">Видел Чака Норриса</label>
+
+          <input class="achievements__input" type="checkbox" name="souvenirs" id="idSouvenirs" >
+          <label class="achievements__label" for="idSouvenirs">Накупил сувениров</label>
+
+          <input class="achievements__input" type="checkbox" name="tower" id="idTower" checked>
+          <label class="achievements__label" for="idTower">Удержал башню</label>
+
+          <input class="achievements__input" type="checkbox" name="hotel" id="idHotel" >
+          <label class="achievements__label" for="idHotel">Разгромил отель</label>
         </fieldset>
 
         <fieldset class="">
           <legend class="">Контактная информация</legend>
+          <input type="text" name="numberPhone" placeholder="Номер, пожалуйста" id="idNumberPhone">
+          <label for="idNumberPhone">Номер телефона</label>
 
+          <input type="text" name="mail" placeholder="Введите почту *" id="idMail">
+          <label for="idMail">Адрес почты</label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">С каким приложением путешествовали?</legend>
-
+        <fieldset class="your-platform">
+          <legend class="your-platform__title">С каким приложением путешествовали?</legend>
+          <input class="your-platform__input" type="radio" name="platform" value="iOS" id="idIOS">
+          <label class="your-platform__label" for="idIOS">Pink для iOS</label>
+          <input class="your-platform__input" type="radio" name="platform" value="Android" id="idAndroid">
+          <label class="your-platform__label" for="idAndroid">Pink на Android</label>
+          <input class="your-platform__input" type="radio" name="platform" value="WindowsPhone" id="idWindowsPhone">
+          <label class="your-platform__label" for="idWindowsPhone">Windows Phone</label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Опишите свои эмоции</legend>
-
+        <fieldset class="your-review">
+          <legend class="your-review__title">Опишите свои эмоции</legend>
+          <textarea class="your-review__text" name="emotion" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях" id="idEmotion"></textarea>
         </fieldset>
 
-        <input class="" type="submit" value="Отправить форму">
+        <input class="form__button" type="submit" value="Отправить форму">
       </form>
-      <p class=""><span class="">*</span>—обязательные поля</p>
+      <p class="form-main__text"><span class="form-main__help">*</span>—обязательные поля</p>
 
     </main>
 
-    <footer class="">
+    <footer class="footer">
+      <h2 class="visually-hidden">дополнительные ссылки</h2>
+
+        <div class="footer__logo">
+          <a class="footer__logo-image" href="#" >
+            <img src="img/pink.svg" height="23" width="74"  alt="логотип">
+          </a>
+        </div>
+
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="twitter-picture" href="#">
+                <img src="img/twitter.svg" height="14" width="18" alt="twitter">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="facebook-picture" href="#">
+                <img src="img/facebook.svg" height="18" width="9" alt="facebook">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="youtube-picture" href="#">
+                <img src="img/youtube.svg" height="13" width="15" alt="youtube">
+              </a>
+            </li>
+          </ul>
+
+        <div class="footer__designed">
+          <span class="footer__designed-by">Разработано</span>
+          <a class="academy-logo" href="#">
+            <img src="img/htmlacademy.svg" height="34" width="27" alt="логотип htmlacademy">
+          </a>
+        </div>
 
     </footer>
+
+    <section class="popup-success">
+      <h2 class="">Ваша заявка отправлена</h2>
+      <p class="">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="" type="button" name="button">Закрыть окно</button>
+    </section>
+    <section class="popup-failure">
+      <h2 class="">Что-то пошло не так!</h2>
+      <p class="">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="" type="button" name="button">Ok</button>
+    </section>
   </body>
+
 </html>
