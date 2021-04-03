@@ -1,20 +1,202 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body>
 
-    <header>
+    <header class="header">
 
-    </header
-    <main>
+      <a class="header__logo-image" href="!#">
+        <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
+      </a>
 
-    </main
-    <footer>
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--wrapper">
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__text" href="#">html academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="header__toggle header__toggle--position">
+        <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
+      </button>
+      <button type="button" class="header__toggle header__toggle--position">
+        <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
+      </button>
+
+      <section class="header__header-description">
+        <h2 class="header__subtitle">Фотографии пользователей</h2>
+      </section>
+    </header>
+
+    <main class="catalog-main">
+
+
+
+      <section class="photo-list">
+        <h2 class="photo-list__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+
+        <div class="day-photo">
+          <a class="day-photo__link-photo" href="#">
+            <img src="img/catalog/panorama-tablet.png" alt="панорама с фуникулера">
+          </a>
+            <span class="day-photo__text">Панорама дня</span>
+          <blockquote class="blockquote">
+            <cite class="blockquote__autor">Анна</cite>
+            <time class="blockquote__time" datetime="2059-06-28">(5 минут назад)</time>
+            <p class="blockquote__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="blockquote__like">Нравится: 215</p>
+          </blockquote>
+        </div>
+
+        <ul class="quotes">
+          <li class="quotes__item">
+            <a href="#">
+              <img src="img/catalog/photo-1-mobile.png" alt="фото авто">
+            </a>
+            <blockquote class="blockquote">
+              <cite class="blockquote__autor">Левон</cite>
+              <time class="blockquote__time" datetime="2059-06-28">(5 часов назад)</time>
+              <p class="blockquote__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="blockquote__like">Нравится: 356</p>
+            </blockquote>
+          </li>
+          <li class="quotes__item">
+            <a href="#">
+              <img src="img/catalog/photo-2-drums.png" alt="барабанная установка">
+            </a>
+            <blockquote class="blockquote">
+              <cite class="blockquote__autor">Антон</cite>
+              <time class="blockquote__time" datetime="2059-06-28">(12 часов назад)</time>
+              <p class="blockquote__text">Соседи будут рады!</p>
+              <p class="blockquote__like">Нравится: 666</p>
+            </blockquote>
+          </li>
+          <li class="quotes__item">
+            <a href="#">
+              <img src="img/catalog/photo-3-sky.png" alt="облака за стеклом">
+            </a>
+            <blockquote class="blockquote">
+              <cite class="blockquote__autor">Борис</cite>
+              <time class="blockquote__time" datetime="2059-06-28">(20 часов назад)</time>
+              <p class="blockquote__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="blockquote__like">Нравится: 215</p>
+            </blockquote>
+          </li>
+          <li class="quotes__item">
+            <a href="#">
+              <img src="img/catalog/photo-4-market.png" alt="Кубанская бахча">
+            </a>
+            <blockquote class="blockquote">
+              <cite class="blockquote__autor">Сергей</cite>
+              <time class="blockquote__time" datetime="2059-06-28">(25 часов назад)</time>
+              <p class="blockquote__text">Самая кубанская в мире!</p>
+              <p class="blockquote__like">Нравится: 4</p>
+            </blockquote>
+          </li>
+          <li class="quotes__item">
+            <a href="#">
+              <img src="img/catalog/mountains.png" alt="ноги на склоне горы">
+            </a>
+            <blockquote class="blockquote">
+              <cite class="blockquote__autor">Максим</cite>
+              <time class="blockquote__time" datetime="2059-06-28">(40 часов назад)</time>
+              <p class="blockquote__text">Где снег-то?</p>
+              <p class="blockquote__like">Нравится: 150</p>
+            </blockquote>
+          </li>
+          <li class="quotes__item">
+            <a href="#">
+              <img src="img/catalog/airplane.png" alt="самолет на фоне солнца">
+            </a>
+            <blockquote class="blockquote">
+              <cite class="blockquote__autor">Надежда</cite>
+              <time class="blockquote__time" datetime="2059-06-28">(45 часов назад)</time>
+              <p class="blockquote__text">Всем GM и взаимные лайки!</p>
+              <p class="blockquote__like">Нравится: 2560</p>
+            </blockquote>
+          </li>
+        </ul>
+        <p class="photo-list__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </section>
+
+      <section class="your-photo">
+        <img src="img/catalog/winter.png" alt="зимний пейзаж">
+        <form class="catalog-form" action="index.html" method="post">
+          <button class="catalog-form__button" type="button" name="button">
+            <img src="img/catalog/crop.svg" alt="уменьшение фотографии">
+          </button>
+          <input class="catalog-form__range" type="range" min="1" max="100" id="rangeCrop">
+          <label class="visually-hidden" for="rangeCrop">диапазон изменения размера фотографии</label>
+
+          <button class="catalog-form__button" type="button" name="button">
+            <img src="img/catalog/fill.svg" alt="наполненнось">
+          </button>
+          <input class="catalog-form__range" type="range" min="1" max="100" id="rangeFill">
+          <label class="visually-hidden" for="rangeFill">диапазон изменения наполненности фотографии</label>
+
+          <button class="catalog-form__button" type="button" name="button">
+            <img src="img/catalog/contrast.svg" alt="контраст">
+          </button>
+          <input class="catalog-form__range" type="range" min="1" max="100" id="rangeContrast">
+          <label class="visually-hidden" for="rangeContrast">диапазон изменения контрастности фотографии</label>
+
+          <div class="your-photo__move">
+            <button class="your-photo__button upload-button" type="button">Запостить</button>
+            <button class="your-photo__button сancel-button" type="button">Отмена</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <h2 class="visually-hidden">дополнительные ссылки</h2>
+
+        <div class="footer__logo">
+          <a class="footer__logo-image" href="#" >
+            <img src="img/pink.svg" height="23" width="74"  alt="логотип">
+          </a>
+        </div>
+
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="twitter-picture" href="#">
+                <img src="img/twitter.svg" height="14" width="18" alt="twitter">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="facebook-picture" href="#">
+                <img src="img/facebook.svg" height="18" width="9" alt="facebook">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="youtube-picture" href="#">
+                <img src="img/youtube.svg" height="13" width="15" alt="youtube">
+              </a>
+            </li>
+          </ul>
+
+        <div class="footer__designed">
+          <span class="footer__designed-by">Разработано</span>
+          <a class="academy-logo" href="#">
+            <img src="img/htmlacademy.svg" height="34" width="27" alt="логотип htmlacademy">
+          </a>
+        </div>
 
     </footer>
   </body>
