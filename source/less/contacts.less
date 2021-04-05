@@ -41,16 +41,23 @@
   text-decoration: none;
 }
 
+.contacts__item {
+  position: relative;
+  z-index: 3;
+}
 
 .contacts__map {
   object-fit: contain;
   position: relative;
-  z-index: 1;
 }
 
-.contacts__map::after {
+.contacts__img-wrapper {
+  position: relative;
+}
+
+.contacts__img-wrapper::after {
   position: absolute;
-  top: 0;
+  top: -90px;
   content: "";
   background-image: url("../img/mask-map.svg");
   background-repeat: no-repeat;
