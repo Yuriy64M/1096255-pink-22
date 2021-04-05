@@ -1,0 +1,61 @@
+.contacts {
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #283645;
+}
+
+.contacts__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color:  #283645
+}
+
+.contacts__phone-number {
+  list-style: none;
+  color: red;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+}
+
+.contacts__contact-mail {
+  list-style: none;
+  color: red;
+  text-decoration: none;
+}
+
+.contacts__address {
+  list-style: none;
+  color: red;
+  text-decoration: none;
+}
+
+
+.contacts__map {
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.contacts__map::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  background-image: url("../img/mask-map.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+  width: 1200px;
+  height: 123px;
+  object-fit: contain;
+}
