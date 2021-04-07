@@ -1,0 +1,50 @@
+.blockquote {
+  background-color: #F2F2F2;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.blockquote__autor {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.blockquote__time {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.blockquote__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.blockquote__like {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #D22856;
+  position: relative;
+  padding-left: 20px;
+}
+
+.blockquote__like::before {
+  background-image: url("../img/catalog/like.svg");
+  content: "";
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 35%;
+}
