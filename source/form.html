@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -77,13 +78,13 @@
           <label class="achievements__label" for="idHotel">Разгромил отель</label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Контактная информация</legend>
-          <input type="text" name="numberPhone" placeholder="Номер, пожалуйста" id="idNumberPhone">
-          <label for="idNumberPhone">Номер телефона</label>
+        <fieldset class="your-contacts">
+          <legend class="your-contacts__title">Контактная информация</legend>
+          <input class="your-contacts__input" type="text" name="numberPhone" placeholder="Номер, пожалуйста" id="idNumberPhone">
+          <label class="your-contact__phone" for="idNumberPhone">Номер телефона</label>
 
-          <input type="text" name="mail" placeholder="Введите почту *" id="idMail">
-          <label for="idMail">Адрес почты</label>
+          <input class="your-contacts__input" type="text" name="mail" placeholder="Введите почту *" id="idMail">
+          <label class="your-contact__mail" for="idMail">Адрес почты</label>
         </fieldset>
 
         <fieldset class="your-platform">
@@ -103,7 +104,7 @@
 
         <input class="form__button" type="submit" value="Отправить форму">
       </form>
-      <p class="form-main__text"><span class="form-main__help">*</span>—обязательные поля</p>
+      <p class="form-main__text"><span class="form-main__help">*</span> — обязательные поля</p>
 
     </main>
 
@@ -144,14 +145,17 @@
     </footer>
 
     <section class="popup-success">
-      <h2 class="">Ваша заявка отправлена</h2>
-      <p class="">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button class="" type="button" name="button">Закрыть окно</button>
+      <h2 class="popup-success__title">Ваша заявка отправлена</h2>
+      <p class="popup-success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="popup-success__wrapper">
+        <button class="popup-success__button" type="button" name="button">Закрыть окно</button>
+      </div>
+
     </section>
     <section class="popup-failure">
-      <h2 class="">Что-то пошло не так!</h2>
-      <p class="">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="" type="button" name="button">Ok</button>
+      <h2 class="popup-failure__title">Что-то пошло не так!</h2>
+      <p class="popup-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup-failure__button" type="button" name="button">Ok</button>
     </section>
   </body>
 
