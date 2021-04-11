@@ -4,12 +4,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
-  background-position-y: -182px;
+//  background-position-y: -182px;
+    @media (min-width: 660px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 }
 
 .advantages__list {
   margin-top: inherit;
   list-style: none;
+  @media (min-width: 660px) {
+    grid-column: 2/3;
+  }
 }
 
 .advantages__subtitle {
@@ -43,4 +50,8 @@
 
 .advantages__phone {
 //  z-index: 2;
+@media (min-width: 660px) {
+  grid-column: 1/2;
+  padding: 0;
+}
 }
