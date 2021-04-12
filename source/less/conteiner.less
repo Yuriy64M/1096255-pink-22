@@ -31,3 +31,29 @@
      display: flex;
   }
 }
+
+.conteiner--interesting {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.conteiner--contacts {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  //  grid-template-rows: 1fr 1fr 1fr
+  }
+}
+
+.conteiner--footer {
+  display: flex;
+  flex-wrap: wrap;
+//  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+    @media (min-width: 660px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}

@@ -1,6 +1,19 @@
 .comment {
   font-family: "Open Sans", Arial, sans-serif;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.comment::before {
+  @media (min-width: 1200) {
+  background-image: url(img/quotes-comment.svg);
+  content: "";
+  background-repeat: no-repeat;
+  width: 79px;
+  height: 63px;
+ }
 }
 
 .comment__autor {
@@ -9,6 +22,39 @@
   font-size: 18px;
   line-height: 30px;
   color: rgba(0, 0, 0, 1);
+    @media (min-width: 660px) {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      order: 2;
+    }
+    @media (min-width: 1200px) {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+    }
+}
+
+.comment__autor-more {
+  display: none;
+  @media (min-width: 660px) {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+
+  }
+  @media (min-width: 1200px) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+  }
 }
 
 .comment__text {
@@ -26,4 +72,25 @@
   height: 6px;
   padding: 0;
   border-radius: 50%;
+    @media (min-width: 1200px) {
+      display: none;
+    }
+}
+
+.comment__slide-button-block {
+  order: 3;
+}
+
+.reviews__arrow-left {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.reviews__arrow-right {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
 }

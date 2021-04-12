@@ -3,14 +3,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 81px;
-  background-position-y: -82px;
+  overflow: hidden;
 }
 
 .offers__table {
   font-family: "Open Sans", Arial, sans-serif;
   background-color: #ffffff;
   border-collapse: collapse;
-//
+  width: 1160px;
+  height: 279px;
+  transform: translateX(-600px);
+   @media (min-width: 660px) {
+     transform: none;
+     width: 616px;
+     height: 153px;
+   }
+   @media (min-width: 1200px) {
+     width: 940px;
+     height: 181px;
+   }
 }
 
 .offers__first-row-date {
@@ -67,6 +78,9 @@ td {
   line-height: 30px;
   text-transform: uppercase;
   color:  #283645;
+   @media (min-width: 660px) {
+     font-size: 0;
+   }
 }
 
 .offers__button {

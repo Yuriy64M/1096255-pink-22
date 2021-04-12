@@ -9,6 +9,20 @@
   font-size: 24px;
   line-height: 29px;
   color: #283645;
+//  grid-row-start: 1;
+//  grid-row-end: 2;
+   @media (min-width: 660px) {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 40px;
+     line-height: 54px;
+   }
+   @media (min-width: 1200px) {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 50px;
+     line-height: 68px;
+   }
 }
 
 .contacts__subtitle {
@@ -44,11 +58,35 @@
 .contacts__item {
   position: relative;
   z-index: 3;
+  text-align: center;
+  @media (min-width: 660px) {
+
+  //  padding-left: 80px;
+  }
+//  @media (min-width: 1200px) {
+//padding-left: 80px;
+//  }
 }
 
+.contacts__item:last-child {
+  @media (min-width: 660px) {
+    margin: 0 10px;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 10px;
+  }
+}
 .contacts__map {
-  object-fit: contain;
+//  object-fit: contain;
   position: relative;
+  @media (min-width: 660px) {
+    width: 660px;
+    height: 374px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+    height: 502px;
+  }
 }
 
 .contacts__img-wrapper {
@@ -61,9 +99,12 @@
   content: "";
   background-image: url("../img/mask-map.svg");
   background-repeat: no-repeat;
+  background-position: center;
   z-index: 2;
   width: 1200px;
   height: 123px;
   object-fit: contain;
   left: 0;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0);
 }
