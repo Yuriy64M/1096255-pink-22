@@ -4,17 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="header">
 
-      <a class="header__logo-image" href="!#">
-        <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
-      </a>
+      <div class="header__logo--wrapper-button-logo">
+        <div class="conteiner">
+          <div class="header__logo-flex">
+            <a class="header__logo-image" href="!#">
+              <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
+            </a>
+
+            <button type="button" class="header__toggle header__toggle--position header__toggle--none">
+              <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
+            </button>
+            <button type="button" class="header__toggle header__toggle--position">
+              <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
+            </button>
+          </div>
+
+        </div>
+      </div>
 
       <nav class="navigation">
         <ul class="navigation__list navigation__list--wrapper">
@@ -33,13 +45,6 @@
         </ul>
       </nav>
 
-      <button type="button" class="header__toggle header__toggle--position">
-        <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
-      </button>
-      <button type="button" class="header__toggle header__toggle--position">
-        <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
-      </button>
-
       <section class="header__header-description">
         <div class="header__image-wrapper">
           <h2 class="header__subtitle">Фотографии пользователей</h2>
@@ -47,7 +52,6 @@
 
       </section>
     </header>
-
     <main class="catalog-main">
 
 
@@ -171,10 +175,10 @@
 
     <footer class="footer">
       <h2 class="visually-hidden">дополнительные ссылки</h2>
-
+      <div class="conteiner conteiner--footer">
         <div class="footer__logo">
           <a class="footer__logo-image" href="#" >
-            <img src="img/pink.svg" height="23" width="74"  alt="логотип">
+            <img src="img/pink-dark.svg" height="23" width="74"  alt="логотип">
           </a>
         </div>
 
@@ -202,6 +206,8 @@
             <img src="img/htmlacademy.svg" height="34" width="27" alt="логотип htmlacademy">
           </a>
         </div>
+
+      </div>
 
     </footer>
   </body>
