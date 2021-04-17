@@ -35,3 +35,24 @@
   padding: 15px 0;
   text-align: center;
 }
+
+@media (min-width: 1200px) {
+  .navigation {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 878px;
+    box-sizing: border-box;
+    padding-right: 130px;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation__item {
+    height: 63px;
+    box-shadow: none;
+  }
+.navigation__item:first-of-type {
+  box-shadow: none;
+}
+}

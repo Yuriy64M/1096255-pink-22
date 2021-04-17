@@ -13,15 +13,6 @@
   width: 1160px;
   height: 279px;
   transform: translateX(-600px);
-   @media (min-width: 660px) {
-     transform: none;
-     width: 616px;
-     height: 153px;
-   }
-   @media (min-width: 1200px) {
-     width: 940px;
-     height: 181px;
-   }
 }
 
 .offers__first-row-date {
@@ -78,9 +69,6 @@ td {
   line-height: 30px;
   text-transform: uppercase;
   color:  #283645;
-   @media (min-width: 660px) {
-     font-size: 0;
-   }
 }
 
 .offers__button {
@@ -95,3 +83,25 @@ td {
 .offers__empty-first-row-cell {
 background-color: #F2F2F2;
 }
+
+@media (min-width: 660px) {
+    .offers__table {
+          transform: none;
+          width: 616px;
+          height: 153px;
+          margin-bottom: 20px;
+        }
+     .offers__text {
+          font-size: 0;
+        }
+        .offers__button {
+          display: none;
+        }
+     }
+
+@media (min-width: 1200px) {
+  .offers__table {
+       width: 940px;
+       height: 181px;
+     }
+  }
