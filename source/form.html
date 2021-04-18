@@ -2,18 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="header">
+      <div class="header__logo--wrapper-button-logo">
+        <div class="conteiner">
+          <div class="header__logo-flex">
+            <a class="header__logo-image" href="!#">
+              <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
+            </a>
 
-      <a class="header__logo-image" href="!#">
-        <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
-      </a>
+            <button type="button" class="header__toggle header__toggle--position header__toggle--none">
+              <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
+            </button>
+            <button type="button" class="header__toggle header__toggle--position">
+              <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
+            </button>
+          </div>
+
+        </div>
+      </div>
 
       <nav class="navigation">
         <ul class="navigation__list navigation__list--wrapper">
@@ -21,10 +33,10 @@
             <a class="navigation__text" href="#">главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__text" href="#">Фотографии</a>
+            <a class="navigation__text" href="catalog.html">Фотографии</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__text" href="#">конкурс</a>
+            <a class="navigation__text" href="form.html">конкурс</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__text" href="#">html academy</a>
@@ -32,21 +44,17 @@
         </ul>
       </nav>
 
-      <button type="button" class="header__toggle header__toggle--position">
-        <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
-      </button>
-      <button type="button" class="header__toggle header__toggle--position">
-        <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
-      </button>
-
       <section class="header__header-description">
         <h2 class="header__subtitle">Конкурс на самое безбашенное путешествие с Пинк!</h2>
       </section>
     </header>
 
     <main class="form-main">
-      <h1 class="form-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h1>
+      <div class="conteiner">
+        <h1 class="form-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h1>
+      </div>
       <form class="form" action="index.html" method="post">
+
         <fieldset class="form-name">
           <legend class="visually-hidden">Личные данные</legend>
           <label class="form-name__label" for="surname">Фамилия:</label>
@@ -59,42 +67,60 @@
 
         <fieldset class="achievements">
           <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
-          <input class="achievements__input" type="checkbox" name="selfy" id="idSelfy" checked>
-          <label class="achievements__label" for="idSelfy">Сделал селфи с акулой</label>
 
-          <input class="achievements__input" type="checkbox" name="beach" id="idBeach" checked>
-          <label class="achievements__label" for="idBeach">Обгорел на пляже</label>
-
-          <input class="achievements__input" type="checkbox" name="Norris" id="idNorris" >
-          <label class="achievements__label" for="idNorris">Видел Чака Норриса</label>
-
-          <input class="achievements__input" type="checkbox" name="souvenirs" id="idSouvenirs" >
-          <label class="achievements__label" for="idSouvenirs">Накупил сувениров</label>
-
-          <input class="achievements__input" type="checkbox" name="tower" id="idTower" checked>
-          <label class="achievements__label" for="idTower">Удержал башню</label>
-
-          <input class="achievements__input" type="checkbox" name="hotel" id="idHotel" >
-          <label class="achievements__label" for="idHotel">Разгромил отель</label>
+          <div class="achievements__group">
+            <input class="achievements__input" type="checkbox" name="selfy" id="idSelfy" checked>
+            <label class="achievements__label" for="idSelfy">Сделал селфи с акулой</label>
+          </div>
+          <div class="achievements__group">
+            <input class="achievements__input" type="checkbox" name="beach" id="idBeach" checked>
+            <label class="achievements__label" for="idBeach">Обгорел на пляже</label>
+          </div>
+          <div class="achievements__group">
+            <input class="achievements__input" type="checkbox" name="Norris" id="idNorris">
+            <label class="achievements__label" for="idNorris">Видел Чака Норриса</label>
+          </div>
+          <div class="achievements__group">
+            <input class="achievements__input" type="checkbox" name="souvenirs" id="idSouvenirs">
+            <label class="achievements__label" for="idSouvenirs">Накупил сувениров</label>
+          </div>
+          <div class="achievements__group">
+            <input class="achievements__input" type="checkbox" name="tower" id="idTower" checked>
+            <label class="achievements__label" for="idTower">Удержал башню</label>
+          </div>
+          <div class="achievements__group">
+            <input class="achievements__input" type="checkbox" name="hotel" id="idHotel">
+            <label class="achievements__label" for="idHotel">Разгромил отель</label>
+          </div>
         </fieldset>
 
         <fieldset class="your-contacts">
-          <legend class="your-contacts__title">Контактная информация</legend>
-          <input class="your-contacts__input" type="text" name="numberPhone" placeholder="Номер, пожалуйста" id="idNumberPhone">
-          <label class="your-contact__phone" for="idNumberPhone">Номер телефона</label>
-
-          <input class="your-contacts__input" type="text" name="mail" placeholder="Введите почту *" id="idMail">
-          <label class="your-contact__mail" for="idMail">Адрес почты</label>
+            <legend class="your-contacts__title">Контактная информация</legend>
+          <div class="your-contact__box">
+            <label class="your-contact__phone" for="idNumberPhone">Номер телефона</label>
+            <input class="your-contacts__input" type="text" name="numberPhone" placeholder="Номер, пожалуйста" id="idNumberPhone">
+          </div>
+          <div class="your-contact__box">
+            <label class="your-contact__mail" for="idMail">Адрес почты</label>
+            <input class="your-contacts__input" type="text" name="mail" placeholder="Введите почту *" id="idMail">
+          </div>
         </fieldset>
 
         <fieldset class="your-platform">
           <legend class="your-platform__title">С каким приложением путешествовали?</legend>
-          <input class="your-platform__input" type="radio" name="platform" value="iOS" id="idIOS">
-          <label class="your-platform__label" for="idIOS">Pink для iOS</label>
-          <input class="your-platform__input" type="radio" name="platform" value="Android" id="idAndroid">
-          <label class="your-platform__label" for="idAndroid">Pink на Android</label>
-          <input class="your-platform__input" type="radio" name="platform" value="WindowsPhone" id="idWindowsPhone">
-          <label class="your-platform__label" for="idWindowsPhone">Windows Phone</label>
+          <div class="your-platform__input-box">
+            <input class="your-platform__input" type="radio" name="platform" value="iOS" id="idIOS">
+            <label class="your-platform__label" for="idIOS">Pink для iOS</label>
+          </div>
+          <div class="your-platform__input-box">
+            <input class="your-platform__input" type="radio" name="platform" value="Android" id="idAndroid">
+            <label class="your-platform__label" for="idAndroid">Pink на Android</label>
+          </div>
+          <div class="your-platform__input-box">
+            <input class="your-platform__input" type="radio" name="platform" value="WindowsPhone" id="idWindowsPhone">
+            <label class="your-platform__label" for="idWindowsPhone">Windows Phone</label>
+          </div>
+
         </fieldset>
 
         <fieldset class="your-review">
@@ -102,18 +128,23 @@
           <textarea class="your-review__text" name="emotion" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях" id="idEmotion"></textarea>
         </fieldset>
 
-        <input class="form__button" type="submit" value="Отправить форму">
+        <div class="form__box">
+          <input class="form__button" type="submit" value="Отправить форму">
+          <p class="form-main__text"><span class="form-main__help">*</span> — обязательные поля</p>
+        </div>
+
+
       </form>
-      <p class="form-main__text"><span class="form-main__help">*</span> — обязательные поля</p>
+
 
     </main>
 
     <footer class="footer">
       <h2 class="visually-hidden">дополнительные ссылки</h2>
-
+      <div class="conteiner conteiner--footer">
         <div class="footer__logo">
           <a class="footer__logo-image" href="#" >
-            <img src="img/pink.svg" height="23" width="74"  alt="логотип">
+            <img src="img/pink-dark.svg" height="23" width="74"  alt="логотип">
           </a>
         </div>
 
@@ -142,8 +173,9 @@
           </a>
         </div>
 
-    </footer>
+      </div>
 
+    </footer>
     <section class="popup-success">
       <h2 class="popup-success__title">Ваша заявка отправлена</h2>
       <p class="popup-success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
@@ -155,7 +187,10 @@
     <section class="popup-failure">
       <h2 class="popup-failure__title">Что-то пошло не так!</h2>
       <p class="popup-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup-failure__button" type="button" name="button">Ok</button>
+      <div class="popup-failure__button-box">
+        <button class="popup-failure__button" type="button" name="button">Ok</button>
+      </div>
+
     </section>
   </body>
 

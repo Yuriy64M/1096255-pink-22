@@ -4,14 +4,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
-  background-position-y: -182px;
+//  background-position-y: -182px;
 }
 
 .advantages__list {
   margin-top: inherit;
   list-style: none;
 }
-
 .advantages__subtitle {
   color: black;
   font-style: normal;
@@ -31,7 +30,7 @@
 }
 
 .advantages__phone--smile {
-  background-image: url("../img/iphone-3.png");
+//  background-image: url("../img/iphone-screen-3.png");  /*контент? лечить позже*/
   background-repeat: no-repeat;
   display: block;
 //  content: "";
@@ -41,6 +40,46 @@
   object-fit: none;
 }
 
-.advantages__phone {
-//  z-index: 2;
-}
+
+
+  @media (min-width: 660px) {
+    .advantages {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+    }
+
+    .advantages__list {
+    }
+
+
+    .advantages__phone {
+      width: 268px;
+      height: 547px;
+    }
+  }
+
+
+
+
+    @media (min-width: 1200px) {
+      .advantages {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-start: 1;
+            grid-column-end: 3;
+          }
+
+      .advantages__list {
+        display: flex;
+          grid-row-start: 2;
+          grid-row-end: 3;
+      }
+
+
+      .advantages__phone {
+      //  z-index: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          padding: 0;
+      }
+    }
