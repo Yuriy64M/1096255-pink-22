@@ -1,10 +1,5 @@
 .form {
   background-color: white;
-  font-family: "Open Sans", Arial, sans-serif;
-  @media (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .form__button {
@@ -24,16 +19,27 @@
   margin: 0 20px;
   text-align: center;
   margin-top: 20px;
-  @media (min-width: 660px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  @media (min-width: 1200px) {
-    grid-row-start: 5;
-    grid-row-end: 6;
-    margin: 0 130px;
-    margin-top: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
 }
+
+  @media (min-width: 660px) {
+    .form__box {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+  }
+
+  @media (min-width: 1200px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+    .form__box {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        margin: 0 130px;
+        margin-top: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }

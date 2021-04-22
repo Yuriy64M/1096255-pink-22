@@ -1,6 +1,5 @@
 .your-contacts {
   background-color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -8,17 +7,6 @@
   border: none;
   margin: 0 20px;
   text-align: center;
-    @media (min-width: 660px) {
-      border: 2px solid #E5E5E5;
-    }
-    @media (min-width: 1200px) {
-      grid-row-start: 2;
-      grid-row-end: 3;
-      margin: 0 130px;
-      flex-direction: row;
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
 }
 
 .your-contacts__title {
@@ -29,8 +17,6 @@
   color:  #D22856;
 }
 
-
-
 .your-contacts__input {
   border: 2px solid #E5E5E5;
   border-radius: 1px;
@@ -40,10 +26,6 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-    @media (min-width: 660px) {
-  }
-  @media (min-width: 1200px) {
-  }
 }
 
 .your-contacts__input::placeholder {
@@ -70,14 +52,29 @@
   line-height: 30px;
   color: #D22856;
   text-transform: uppercase;
-
 }
 
 .your-contact__box{
   text-align: left;
-  @media (min-width: 660px) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
 }
+
+  @media (min-width: 660px) {
+    .your-contacts {
+          border: 2px solid #E5E5E5;
+        }
+    .your-contact__box{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+        @media (min-width: 1200px) {
+          .your-contacts {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin: 0 130px;
+                flex-direction: row;
+                grid-column-start: 1;
+                grid-column-end: 3;
+              }
+        }

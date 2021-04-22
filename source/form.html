@@ -9,45 +9,48 @@
   <body>
 
     <header class="header">
-      <div class="header__logo--wrapper-button-logo">
-        <div class="conteiner">
-          <div class="header__logo-flex">
-            <a class="header__logo-image" href="!#">
-              <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
-            </a>
+      <div class="conteiner--navigation">
+        <nav class="navigation">
+          <ul class="navigation__list navigation__list--wrapper">
+            <li class="navigation__item">
+              <a class="navigation__text" href="#">главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__text" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__text" href="form.html">конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__text" href="#">html academy</a>
+            </li>
+          </ul>
+        </nav>
 
-            <button type="button" class="header__toggle header__toggle--position header__toggle--none">
-              <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
-            </button>
-            <button type="button" class="header__toggle header__toggle--position">
-              <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
-            </button>
-          </div>
+        <div class="header__logo--wrapper-button-logo">
 
+            <div class="header__logo-flex">
+              <a class="header__logo-image" href="!#">
+                <img  src="img/pink.svg" height="23" width="74" alt="pink логотип">
+              </a>
+
+              <button type="button" class="header__toggle header__toggle--position header__toggle--none">
+                <img src="img/open-menu-btn.svg" height="24" width="50" alt="меню-гамбургер">
+              </button>
+              <button type="button" class="header__toggle header__toggle--position">
+                <img src="img/close-menu-btn.svg" height="23" width="23" alt="крестик-закрытие меню">
+              </button>
+            </div>
         </div>
       </div>
 
-      <nav class="navigation">
-        <ul class="navigation__list navigation__list--wrapper">
-          <li class="navigation__item">
-            <a class="navigation__text" href="#">главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__text" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__text" href="form.html">конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__text" href="#">html academy</a>
-          </li>
-        </ul>
-      </nav>
-
-      <section class="header__header-description">
-        <h2 class="header__subtitle">Конкурс на самое безбашенное путешествие с Пинк!</h2>
-      </section>
+        <section class="header__header-description">
+          <div class="conteiner conteiner--header">
+             <h2 class="header__subtitle">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          </div>
+        </section>
     </header>
+
 
     <main class="form-main">
       <div class="conteiner">
