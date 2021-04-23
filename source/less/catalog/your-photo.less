@@ -1,6 +1,6 @@
 .your-photo {
   background-color: #F2F2F2;
-  font-family: "Open Sans", Arial, sans-serif;
+  padding: 20px;
 }
 
 .your-photo>img {
@@ -9,7 +9,6 @@
 
 .your-photo__move {
   background-color: #F2F2F2;
-  font-family: "Open Sans", Arial, sans-serif;
   border-top: 1px solid rgba(40, 54, 69, 0.1);
 }
 
@@ -19,15 +18,38 @@
   font-size: 18px;
   line-height: 18px;
   border-radius: 30px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 55px;
 }
 
 .upload-button {
+  margin-top: 38px;
   color: #D22856;
   border: 3px solid #D22856;
 }
 
 .cancel-button {
+  margin-top: 12px;
   border: 3px solid #283645;
   color: #283645;
   opacity: 0.1;
+}
+
+@media (min-width: 660px) {
+  .your-photo {
+    display: flex;
+  }
+  .your-photo>img {
+    margin-right: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .your-photo {
+    margin: 0 130px;
+}
+.your-photo>img {
+  margin-right: 90px;
+}
 }
