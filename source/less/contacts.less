@@ -10,11 +10,15 @@
   line-height: 29px;
   color: #283645;
   text-align: center;
+  padding-top: 30px;
 //  grid-row-start: 1;
 //  grid-row-end: 2;
 }
 
 .contacts__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -36,15 +40,26 @@
   list-style: none;
   color: red;
   text-decoration: none;
+  &:hover {
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 .contacts__address {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
   list-style: none;
   color: red;
   text-decoration: none;
 }
 
 .contacts__item {
+
   position: relative;
   z-index: 3;
   text-align: center;

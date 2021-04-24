@@ -4,15 +4,17 @@
   background-size: cover;
   padding-top: 81px;
   overflow: hidden;
+  text-align: center;
 }
 
 .offers__table {
-  font-family: "Open Sans", Arial, sans-serif;
   background-color: #ffffff;
   border-collapse: collapse;
-  width: 1160px;
-  height: 279px;
-  transform: translateX(-600px);
+  width: 828px;
+  min-height: 279px;
+  transform: translateX(-276px);
+  transform: translateX(12px);
+  transform: translateX(-539px);
 }
 
 .offers__first-row-date {
@@ -50,11 +52,22 @@
   line-height: 30px;
 }
 
-td {
+.offers__table td {
+  text-align: left;
   border: 2px solid #E5E5E5;
+  padding: 0px 40px 0px 20px;
+  position: relative;
+}
+
+.offers__img {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .offers__first-column {
+  display: none;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -69,19 +82,39 @@ td {
   line-height: 30px;
   text-transform: uppercase;
   color:  #283645;
+  //margin: auto 0 auto 20px;
+//  margin: auto;
 }
 
+//td img{
+//  margin: auto;
+//}
+
 .offers__button {
+  text-align: center;
   background-color: rgba(40, 54, 69, 0.3);
   border: none;
   width: 6px;
   height: 6px;
   padding: 0;
   border-radius: 50%;
+  margin-right: 19px;
+  margin-top: 45px;
+  margin-bottom: 49px;
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    width: 9px;
+    height: 9px;
+    border: 3px solid #283645;
+   }
 }
 
 .offers__empty-first-row-cell {
 background-color: #F2F2F2;
+display: none;
 }
 
 @media (min-width: 660px) {
@@ -91,9 +124,19 @@ background-color: #F2F2F2;
           height: 153px;
           margin-bottom: 20px;
         }
+
+      .offers__first-column {
+        display: table-cell;
+      }
+
+      .offers__empty-first-row-cell {
+      display: table-cell;
+      }
+
      .offers__text {
           font-size: 0;
         }
+
         .offers__button {
           display: none;
         }

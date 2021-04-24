@@ -4,16 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-
-.comment::before {
-  @media (min-width: 1200) {
-  background-image: url(img/quotes-comment.svg);
-  content: "";
-  background-repeat: no-repeat;
-  width: 79px;
-  height: 63px;
- }
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
 }
 
 .comment__autor {
@@ -22,39 +15,10 @@
   font-size: 18px;
   line-height: 30px;
   color: rgba(0, 0, 0, 1);
-    @media (min-width: 660px) {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 30px;
-      order: 2;
-    }
-    @media (min-width: 1200px) {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 30px;
-    }
 }
 
 .comment__autor-more {
   display: none;
-  @media (min-width: 660px) {
-    display: block;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 30px;
-    color: #283645;
-
-  }
-  @media (min-width: 1200px) {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    color: #283645;
-  }
 }
 
 .comment__text {
@@ -72,25 +36,85 @@
   height: 6px;
   padding: 0;
   border-radius: 50%;
-    @media (min-width: 1200px) {
-      display: none;
-    }
+  margin-right: 19px;
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    width: 9px;
+    height: 9px;
+    border: 3px solid #283645;
+   }
 }
 
 .comment__slide-button-block {
+  margin-top: 8px;
   order: 3;
 }
 
 .reviews__arrow-left {
   display: none;
-  @media (min-width: 1200px) {
-    display: block;
-  }
 }
 
 .reviews__arrow-right {
   display: none;
-  @media (min-width: 1200px) {
-    display: block;
-  }
 }
+
+    @media (min-width: 660px) {
+       .comment__autor {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            order: 2;
+      }
+
+      .comment__autor-more {
+          display: block;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 30px;
+          color: #283645;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .comment::before {
+      background-image: url("img/quotes-comment.svg");
+      content: "";
+      background-repeat: no-repeat;
+      width: 79px;
+      height: 63px;
+    }
+
+    .comment__autor {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 30px;
+    }
+
+    .comment__autor-more {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #283645;
+      }
+
+    .comment__slide-button {
+          display: none;
+    }
+
+
+
+    .reviews__arrow-left {
+        display: block;
+    }
+
+    .reviews__arrow-right {
+        display: block;
+      }
+  }

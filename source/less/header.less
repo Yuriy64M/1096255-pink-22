@@ -21,9 +21,17 @@
 .header__logo-image {
   margin: auto 0;
   margin-left: 10px;
+  &:hover path {
+    fill: #D22856;
+  }
+  &:active path{
+    fill: white;
+    opacity: 0.3;
+  }
 }
 
 .header__header-description {
+  text-align: center;
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
 //  object-fit: none;
@@ -34,8 +42,10 @@
 }
 
 .phone {
-  align-self: flex-end;
   transform: translate(20px, 92px);
+  position: absolute;
+  left: -20px;
+  bottom: 328px;
 }
 
 .header__image-wrapper img {
@@ -43,13 +53,21 @@
   bottom: 0;
 }
 
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header__logo-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 320px;
-  box-sizing: border-box;
   padding: 0 20px;
+
+  min-height: 69px;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  margin-bottom: 1px;
 }
 
 .header__subtitle {
@@ -59,12 +77,20 @@
   line-height: 29px;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  margin-top: 29px;
 }
 
 .header__toggle {
   background-color: inherit;
   border: none;
+  &:hover path{
+    fill: #D22856;
+  }
+  &:active path{
+    fill: #D22856;
+    opacity: 0.3;
+  }
 }
 
 .header__footer {
@@ -86,8 +112,15 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  margin-top: 140px;
-
+  margin-top: 400px;
+  &:hover {
+    color: #D22856;
+    background-color: white;
+  }
+  &:active {
+    background-color: white;
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .operating-systems {
@@ -96,12 +129,19 @@
 
 }
 
+.operating-systems__item {
+  margin-right: 35px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
 .header__text {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-
+  padding: 0 20px;
 }
 
 @media (min-width: 660px) {
