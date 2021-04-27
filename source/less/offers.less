@@ -18,6 +18,7 @@
 }
 
 .offers__first-row-date {
+  position: relative;
   background: #283645;
   font-style: normal;
   font-weight: bold;
@@ -25,6 +26,16 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #ffffff;
+  &--hit:after {
+    position: absolute;
+    background-image: url("../img/hit-ribbon.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 74px;
+    height: 74px;
+    left: 0;
+    top: 0;
+  }
 }
 
 .offers__first-row-date:nth-of-type(2) {
@@ -113,17 +124,33 @@
 }
 
 .offers__empty-first-row-cell {
-background-color: #F2F2F2;
-display: none;
+  background-color: #F2F2F2;
+  display: none;
 }
 
 @media (min-width: 660px) {
+.offers  {
+  background-position-y: -30px;
+}
     .offers__table {
+    margin-top: 40px;
+
           transform: none;
           width: 616px;
-          height: 153px;
-          margin-bottom: 20px;
+          min-height: 216px;
+          margin-bottom: 70px;
         }
+
+.offers__table td{
+  width: 25%;
+}
+
+.offers__img {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(34%, -50%);
+}
 
       .offers__first-column {
         display: table-cell;
@@ -144,7 +171,16 @@ display: none;
 
 @media (min-width: 1200px) {
   .offers__table {
+       margin-top: 119px;
        width: 940px;
-       height: 181px;
+       min-height: 200px;
      }
+
+.offers__first-row-date {
+  height: 94px;
+}
+
+.offers__other-row {
+  height: 59px;
+}
   }

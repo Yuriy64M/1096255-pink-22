@@ -3,7 +3,7 @@
   background-image: url("../img/mask-advantages.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 90px;
+  padding-top: 122px;
 //  background-position-y: -182px;
   overflow: hidden;
   position: relative;
@@ -20,11 +20,11 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Open Sans", Arial, sans-serif;
+
 }
 
 .advantages__description {
-  font-family: "Open Sans", Arial, sans-serif;
+
   color: rgba(40, 54, 69, 1);
   font-style: normal;
   font-weight: normal;
@@ -50,17 +50,29 @@
 
   @media (min-width: 660px) {
     .advantages {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+
+          text-align: left;
+          background-position-y: -45px;
+      //    display: flex;
+        //  justify-content: space-between;
+        //  display: grid;
+      //    grid-template-columns: 1fr 1fr;
     }
 
     .advantages__list {
+      display: inline-block;
+      width: 310px;
+      margin: 0px;
+      margin-left: 42px;
+      margin-bottom: 49px;
     }
 
 
     .advantages__phone {
-      width: 268px;
-      height: 547px;
+      float: left;
+    //  width: 268px;
+//height: 547px;
+margin: 0;
     }
   }
 
@@ -68,19 +80,39 @@
 
 
     @media (min-width: 1200px) {
-      .advantages {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-start: 1;
-            grid-column-end: 3;
-          }
+.advantages__grid {
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-row-gap: 50px;
+}
+
+.advantages__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.advantages__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+}
 
       .advantages__list {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0;
+        text-align: center;
+        width: 100%;
         display: flex;
-          grid-row-start: 2;
-          grid-row-end: 3;
+        justify-content: space-around;
       }
 
+.advantages__item {
+  width: 252px;
+}
 
       .advantages__phone {
       //  z-index: 2;
