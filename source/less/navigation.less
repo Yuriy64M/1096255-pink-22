@@ -1,7 +1,8 @@
 .navigation {
   background-color: #283645;
   color: white;
-  font-family: "Open Sans", Arial, sans-serif;
+  width: 100%;
+  order: 1;
   padding: 0;
   margin: 0;
 }
@@ -23,7 +24,7 @@
 }
 
 .navigation__item:first-of-type {
-  height: 69px;
+  height: 63px;
   box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
 }
 
@@ -34,17 +35,29 @@
   display: block;
   padding: 15px 0;
   text-align: center;
+  &:hover {
+    color: #D22856;
+  }
+  &:active {
+    color: white;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 1200px) {
   .navigation {
     background-color: rgba(0, 0, 0, 0.3);
     width: 878px;
-    box-sizing: border-box;
+  //  box-sizing: border-box;
     padding-right: 130px;
+    padding-top: 20px;
   }
 
   .navigation__list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
     display: flex;
     justify-content: space-between;
   }

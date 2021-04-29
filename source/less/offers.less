@@ -4,18 +4,21 @@
   background-size: cover;
   padding-top: 81px;
   overflow: hidden;
+  text-align: center;
 }
 
 .offers__table {
-  font-family: "Open Sans", Arial, sans-serif;
   background-color: #ffffff;
   border-collapse: collapse;
-  width: 1160px;
-  height: 279px;
-  transform: translateX(-600px);
+  width: 828px;
+  min-height: 279px;
+  transform: translateX(-276px);
+  transform: translateX(12px);
+  transform: translateX(-539px);
 }
 
 .offers__first-row-date {
+  position: relative;
   background: #283645;
   font-style: normal;
   font-weight: bold;
@@ -23,6 +26,16 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #ffffff;
+  &--hit:after {
+    position: absolute;
+    background-image: url("../img/hit-ribbon.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 74px;
+    height: 74px;
+    left: 0;
+    top: 0;
+  }
 }
 
 .offers__first-row-date:nth-of-type(2) {
@@ -50,11 +63,22 @@
   line-height: 30px;
 }
 
-td {
+.offers__table td {
+  text-align: left;
   border: 2px solid #E5E5E5;
+  padding: 0px 40px 0px 20px;
+  position: relative;
+}
+
+.offers__img {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .offers__first-column {
+  display: none;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -69,31 +93,77 @@ td {
   line-height: 30px;
   text-transform: uppercase;
   color:  #283645;
+  //margin: auto 0 auto 20px;
+//  margin: auto;
 }
 
+//td img{
+//  margin: auto;
+//}
+
 .offers__button {
+  text-align: center;
   background-color: rgba(40, 54, 69, 0.3);
   border: none;
   width: 6px;
   height: 6px;
   padding: 0;
   border-radius: 50%;
+  margin-right: 19px;
+  margin-top: 45px;
+  margin-bottom: 49px;
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    width: 9px;
+    height: 9px;
+    border: 3px solid #283645;
+   }
 }
 
 .offers__empty-first-row-cell {
-background-color: #F2F2F2;
+  background-color: #F2F2F2;
+  display: none;
 }
 
 @media (min-width: 660px) {
+.offers  {
+  background-position-y: -30px;
+}
     .offers__table {
+    margin-top: 40px;
+
           transform: none;
           width: 616px;
-          height: 153px;
-          margin-bottom: 20px;
+          min-height: 216px;
+          margin-bottom: 70px;
         }
+
+.offers__table td{
+  width: 25%;
+}
+
+.offers__img {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(34%, -50%);
+}
+
+      .offers__first-column {
+        display: table-cell;
+      }
+
+      .offers__empty-first-row-cell {
+      display: table-cell;
+      }
+
      .offers__text {
           font-size: 0;
         }
+
         .offers__button {
           display: none;
         }
@@ -101,7 +171,16 @@ background-color: #F2F2F2;
 
 @media (min-width: 1200px) {
   .offers__table {
+       margin-top: 119px;
        width: 940px;
-       height: 181px;
+       min-height: 200px;
      }
+
+.offers__first-row-date {
+  height: 94px;
+}
+
+.offers__other-row {
+  height: 59px;
+}
   }

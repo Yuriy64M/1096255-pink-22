@@ -1,66 +1,98 @@
 .interesting {
   width: 660px;
   display: none;
-  @media (min-width: 660px){
-
-    display: block;
-  background-color: white;
-  font-family: "Open Sans", Arial, sans-serif;
-}
-    @media (min-width: 1200) {
-      background-color: #F2F2F2;
-    }
 }
 
-.interesting img {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: -1;
-  @media (min-width: 1200) {
-    width: 298px;
-    height: 345px;
-  }
+// .interesting img {
+//   grid-column-start: 1;
+//   grid-column-end: 2;
+//   grid-row-start: 1;
+//   grid-row-end: -1;
+// }
+
+.interesting__wrapper {
+  text-align: left;
+  width: 310px;
+  margin-left: 72px;
 }
 
 .interesting__subtitle {
-  grid-column-start: 2;
-  grid-column-end: 3;
   color: black;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-    @media (min-width: 1200) {
-      line-height: 30px;
-   }
 }
 
 .interesting__text {
-  grid-column-start: 2;
-  grid-column-end: 3;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color:  #283645;
-  @media (min-width: 1200) {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
- }
 }
 
 .interesting__link {
-  grid-column-start: 2;
-  grid-column-end: 3;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: #D22856;
-  @media (min-width: 1200) {
+}
+
+@media (min-width: 660px){
+  .interesting {
+    display: block;
+    background-color: white;
+  }
+
+  .interesting__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .interesting img {
+    margin-top: 54px;
+  }
+
+  .interesting__subtitle  {
+    margin-top: 102px;
+    display: inline-block;
+  }
+
+  .interesting__text{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .interesting {
+    width: 1200px;
+    background-color: #F2F2F2;
+  }
+
+  .interesting__wrapper {
+    width: 100%;
+  }
+
+  .interesting img {
+    width: 298px;
+    height: 345px;
+    margin-bottom: 67px;
+  }
+
+  .interesting__subtitle {
+    line-height: 30px;
+  }
+
+  .interesting__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .interesting__link {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

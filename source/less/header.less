@@ -21,9 +21,17 @@
 .header__logo-image {
   margin: auto 0;
   margin-left: 10px;
+  &:hover path {
+    fill: #D22856;
+  }
+  &:active path{
+    fill: white;
+    opacity: 0.3;
+  }
 }
 
 .header__header-description {
+  text-align: center;
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
 //  object-fit: none;
@@ -34,8 +42,10 @@
 }
 
 .phone {
-  align-self: flex-end;
   transform: translate(20px, 92px);
+  position: absolute;
+  left: -20px;
+  bottom: 328px;
 }
 
 .header__image-wrapper img {
@@ -43,13 +53,25 @@
   bottom: 0;
 }
 
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__wrapper-2 {
+  width: 280px;
+}
+
 .header__logo-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 320px;
-  box-sizing: border-box;
   padding: 0 20px;
+
+  min-height: 69px;
+  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  margin-bottom: 1px;
 }
 
 .header__subtitle {
@@ -59,12 +81,24 @@
   line-height: 29px;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  margin-top: 29px;
+}
+
+.header__subtitle br {
+  display: none;
 }
 
 .header__toggle {
   background-color: inherit;
   border: none;
+  &:hover path{
+    fill: #D22856;
+  }
+  &:active path{
+    fill: #D22856;
+    opacity: 0.3;
+  }
 }
 
 .header__footer {
@@ -86,8 +120,15 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  margin-top: 140px;
-
+  margin-top: 400px;
+  &:hover {
+    color: #D22856;
+    background-color: white;
+  }
+  &:active {
+    background-color: white;
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .operating-systems {
@@ -96,23 +137,29 @@
 
 }
 
+.operating-systems__item {
+  margin-right: 35px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
 .header__text {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-
+  padding: 0 20px;
 }
 
 @media (min-width: 660px) {
-    .header__logo--wrapper-button-logo {
-      height: 110px;
-  //    background-color: rgba(0, 0, 0, 0.3);
-    }
-
     .header__header-description {
       background-size: cover;                     /*фоновую картинку вероятно заменить*/
     }                                              /*руку вероятно тоже*/
+
+.header__wrapper-2 {
+  width: 300px;
+}
 
     .phone {
       width: 660px;
@@ -127,11 +174,22 @@
     }
 
     .header__logo-flex {
-      padding-top: 40px;
+      min-height: 109px;
+      padding-top: 10px;
       width: 660px;
     }
 
+.header__logo-image {      //очки на десктопе как делать?
+  padding-left: 70px;
+}
+
+// .header__description-wrapper {
+//   width: 300px;
+//
+// }
+
   .header__subtitle {
+       width: 300px;
        font-style: normal;
        font-weight: 300;
        font-size: 40px;
@@ -141,7 +199,11 @@
        padding: 0;
        margin: 0;
        z-index: 1;
-       margin-top: 625px;/*временно*/
+       margin-top: 102px;/*временно*/
+     }
+
+     .header__subtitle br {
+       display: inherit;
      }
 
     .header__footer {
@@ -154,15 +216,22 @@
       padding: 0;
       margin: 0;
       z-index: 1;
+      margin-top: 39px;
+      width: 300px;
+  //    margin-left: -320px;
     }
 
       .operating-systems {
-        grid-column-start: 1;
-        grid-column-end: 2;
+    //    grid-column-start: 1;
+  //      grid-column-end: 2;
         z-index: 1;
+        margin-top: 46px;
       }
 
        .header__text {
+         margin-top: 42px;
+         margin-bottom: 119px;
+         width: 300px;
          font-style: normal;
          font-weight: 300;
          font-size: 18px;
@@ -170,6 +239,8 @@
          grid-column-start: 1;
          grid-column-end: 2;
          z-index: 1;
+         padding: 0;
+
        }
 }
 
@@ -179,7 +250,22 @@
       height: 645px;
     }
 
+.operating-systems {
+  margin-top: 75px;
+}
+
+.header__wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.header__wrapper-2 {
+  width: 300px;
+}
+
   .header__subtitle {
+       margin-top: 200px;
        font-style: normal;
        font-weight: 300;
        font-size: 50px;
@@ -189,16 +275,30 @@
   .header__toggle {
     display: none;
   }
+
+.download {
+  margin-top: 51px;
+}
+
   .header__logo-flex  {
     width: 320px;
     padding: 0;
     padding-left: 130px;
     background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
  }
  .header__logo--wrapper-button-logo{
    box-shadow: none;
  }
+
+.header__text {
+  margin-top: 59px;
 }
+
+
+}
+
+
   /*
   @media (min-width: 1200px){
     .header__subtitle {

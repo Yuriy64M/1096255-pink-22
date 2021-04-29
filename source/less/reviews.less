@@ -1,5 +1,35 @@
 .reviews {
   background-color: white;
-  font-family: "Open Sans", Arial, sans-serif;
   text-align: center;
+  position: relative;
+}
+
+@media (min-width:1200px){
+  .reviews__arrow {
+
+    &:hover path{
+        fill: rgba(40, 54, 69, 0.6);
+    }
+  &:active path{
+    fill: rgba(40, 54, 69, 0.1);
+  }
+}
+
+  .reviews__arrow-left {
+  display: block;
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  border: none;
+}
+
+.reviews__arrow-right {
+display: block;
+position: absolute;
+top: 50%;
+right: 0;
+transform: rotate(180deg);
+background-color: white;
+border: none;
+}
 }
