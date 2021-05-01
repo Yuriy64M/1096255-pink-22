@@ -3,9 +3,9 @@
   padding: 0 20px;
   margin: 0;
   border: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
   text-align: center;
 }
 
@@ -17,9 +17,14 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-top: 80px;
+
 }
 
 .achievements__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
   color: #283645;
   font-style: normal;
   font-weight: normal;
@@ -28,21 +33,60 @@
   padding-left: 57px
 }
 
+.achievements__input + label::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  background-color: white;
+}
+
+.achievements__input:checked + label::after{
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/red-tick.svg");
+  background-repeat: no-repeat;
+}
+
 .achievements__group {
-  align-self: self-start;
+  padding-top: 55px;
+  text-align: left;
+//  align-self: self-start;
+}
+
+.achievements__group:last-of-type {
+  padding-bottom: 55px;
 }
 
   @media (min-width: 660px) {
     .achievements {
+          order: 3;
           padding: 0;
           margin: 0 20px;
+          margin-top: 65px;
           background-color: white;
           border: 2px solid #E5E5E5;
         }
 
     .achievements__title {
+        width: 436px;
         padding: 0;
       }
+    .achievements__title br{
+      display: none;
+    }
+
+    .achievements__label {
+      margin-left: 117px;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -51,17 +95,42 @@
           grid-row-end: 4;
           margin: 0 130px;
           display: flex;
-          flex-direction: row;
-          justify-content: center;
+          flex-direction: column;
+        //  justify-content: space-around;
+          flex-wrap: wrap;
           grid-column-start: 1;
           grid-column-end: 3;
+          height: 228px;
+          margin-top: 64px;
         }
 
     .achievements__title {
         padding: 0;
       }
 
-    .achievements__group {
-          align-self: self-start;
-      }
+
+
+.achievements__group:last-of-type {
+  padding: 0;
+  padding-left: 40px;
+  padding-top: 55px;
+
+}
+
+.achievements__group {
+      order: 0;
+      padding-left: 40px;
+  //   &:nth-of-type(2n+1) {
+  //   padding: 0;
+  //   margin-top: 49px;
+  // }
+  //   &:nth-of-type(2n) {
+  //   padding: 0;
+  //   margin-bottom: 57px;
+  // }
+}
+
+    .achievements__label {
+      margin: 0;
+    }
     }

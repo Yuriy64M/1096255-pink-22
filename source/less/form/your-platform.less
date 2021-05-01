@@ -1,10 +1,12 @@
 .your-platform {
   background-color: #F2F2F2;
   border: none;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   padding: 0 20px;
   margin: 0 ;
+  text-align: center;
+  padding-top: 42px;
 }
 
 .your-platform__title {
@@ -14,19 +16,53 @@
   line-height: 18px;
   color:  #D22856;
   text-transform: uppercase;
+  padding-bottom: 52px;
+}
+
+.fieldset-background {
+  background-color: #F2F2F2;
 }
 
 .your-platform__label {
+  position: relative;
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color:  #283645;
+
+}
+
+.your-platform__input + label::before {
+  content: "";
+  position: absolute;
+  left: -63px;
+  top: -6px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #E5E5E5;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.your-platform__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -52px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #D22856;
 }
 
 .your-platform__input-box {
-  display: flex;
-  align-items:baseline;
+  text-align: left;
+    padding-bottom: 62px;
+    padding-left: 90px;
+  // display: flex;
+  // align-items:baseline;
 }
 
   @media (min-width: 660px) {
@@ -36,6 +72,21 @@
         background-color: white;
         border: 2px solid #E5E5E5;
         width: 616px;
+        margin-top: 51px;
+      }
+
+      .fieldset-background {
+        order: 1;
+        background-color: white;
+      }
+      .your-platform__title {
+        padding: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 61px;
+      }
+      .your-platform__input-box {
+        padding-left: 119px;
       }
   }
 
@@ -49,5 +100,15 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
+      }
+      .your-platform__input-box {
+        padding-bottom: 42px;
+      }
+      .your-platform__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 57px;
       }
     }
