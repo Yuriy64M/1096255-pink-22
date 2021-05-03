@@ -10,9 +10,16 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+  margin-top: 54px;
+}
+
+.form-main__title-span {
+  display: none;
 }
 
 .form-main__text {
+  margin-top: 46px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -30,9 +37,21 @@
 
     @media (min-width: 660px) {
       .form-main__title {
+            width: 490px;
+            margin-left: auto;
+            margin-right: auto;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
             line-height: 30px;
           }
+          .form-main__title-span {
+            display: inline;
+          }
       }
+
+    @media (min-width: 1200px) {
+      .form-main__title {
+      width: 756px;
+    }
+}

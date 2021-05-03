@@ -1,4 +1,5 @@
 .form {
+  margin-top: 55px;
   background-color: white;
 }
 
@@ -11,6 +12,8 @@
   color: white;
   text-transform: uppercase;
   border: none;
+  width: 100%;
+  min-height: 59px;
 }
 
 .form__box {
@@ -19,15 +22,26 @@
   margin: 0 20px;
   text-align: center;
   margin-top: 20px;
+  align-items: baseline;
 }
 
   @media (min-width: 660px) {
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
     .form__box {
+      order: 6;
         flex-direction: row;
         justify-content: space-between;
       }
-  }
 
+.form__button {
+    width: 296px;
+    height: 59px;
+  }
+}
   @media (min-width: 1200px) {
     .form {
         display: grid;
