@@ -7,6 +7,12 @@
   border: none;
   margin: 0 20px;
   text-align: center;
+  padding-bottom: 44px;
+  position: relative;
+}
+
+.your-contacts__button {
+  display: none;
 }
 
 .your-contacts__title {
@@ -15,17 +21,21 @@
   font-size: 14px;
   line-height: 30px;
   color:  #D22856;
+  opacity: 0;
+  text-transform: uppercase;
 }
 
 .your-contacts__input {
-  border: 2px solid #E5E5E5;
-  border-radius: 1px;
   background-color: white;
   color: #283645;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  height: 59px;
+  width: 276px;
 }
 
 .your-contacts__input::placeholder {
@@ -34,6 +44,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  padding-left: 20px;
 }
 
 .your-contact__phone {
@@ -43,6 +54,7 @@
   line-height: 30px;
   color: #D22856;
   text-transform: uppercase;
+  padding-left: 23px;
 }
 
 .your-contact__mail {
@@ -52,6 +64,7 @@
   line-height: 30px;
   color: #D22856;
   text-transform: uppercase;
+  padding-left: 23px;
 }
 
 .your-contact__box{
@@ -60,11 +73,46 @@
 
   @media (min-width: 660px) {
     .your-contacts {
+          margin-top: 65px;
+          order: 2;
           border: 2px solid #E5E5E5;
         }
+
     .your-contact__box{
+      position: relative;
         display: flex;
         flex-direction: column-reverse;
+      }
+
+    .your-contacts__title {
+        opacity: 1;
+        padding-left: 31px;
+        padding-right: 31px;
+      }
+
+      .your-contacts__input {
+        margin-top: 19px;
+        width: 496px;
+        margin-left: 82px;
+      }
+
+      .your-contact__phone{
+        margin-top: 22px;
+        padding-left: 99px;
+      }
+
+      .your-contact__mail{
+        margin-top: 22px;
+        padding-left: 99px;
+      }
+      .your-contacts__button {
+        display: inline-block;
+        position: absolute;
+        width: 59px;
+        height: 59px;
+        border: none;
+        right: 15px;
+        top: 19px;
       }
     }
 
@@ -76,5 +124,31 @@
                 flex-direction: row;
                 grid-column-start: 1;
                 grid-column-end: 3;
+                display: flex;
+                justify-content: space-between;
+              }
+              .your-contacts__input {
+                width: 371px;
+                margin: 0;
+                }
+
+              .your-contacts__button {
+                right: 2px;
+                top: 0;
+              }
+              .your-contact__box {
+                margin-top: 44px;
+                &:first-of-type {
+                  margin-left: 60px;
+                }
+                &:last-of-type{
+                  margin-right: 60px;
+                }
+                .your-contact__phone {
+                  padding-left: 30px;
+                }
+                .your-contact__mail {
+                  padding-left: 30px;
+                }
               }
         }
