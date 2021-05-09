@@ -58,7 +58,12 @@
               <div class="header__wrapper-2">
                 <h2 class="header__subtitle">Взгляните<br> на жизнь<br> иначе!</h2>
                 <!-- <div class="header__image-wrapper">-->
-                  <img src="img/hend-pink.png"  class="phone phone--pink" height="286" width="320" alt="фото здания в мобильнике, украшенное розовым фоном, на фоне этого же здание, затененного серым">
+                <picture class="phone phone--pink">
+                  <source media="(min-width: 1200px)" srcset="img/hend-pink-desktop.png 1x, img/hend-pink-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/hend-pink-tablet.png 1x, img/hend-pink-tablet@2x.png 2x">
+                  <img src="img/hend-pink.png"  srcset="img/hend-pink@2x.png 2x" height="286" width="320" alt="фото здания в мобильнике, украшенное розовым фоном, на фоне этого же здание, затененного серым">
+                </picture>
+
                   <!--</div>-->
 
                     <button type="button" class="download">Скачать приложение</button>
@@ -96,21 +101,32 @@
         <div class="advantages">
           <div class="conteiner advantages__grid">
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--first">
                 <h3 class="advantages__subtitle">Поднимает настроение</h3>
                 <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--second">
                 <h3 class="advantages__subtitle">Меняет мир вокруг</h3>
                 <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--third">
                 <h3 class="advantages__subtitle">Заводит новых друзей</h3>
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-
-            <img class="advantages__phone advantages__phone--smile" src="img/iphone-screen-3-157-320.png" height="320" width="157" alt="фото на телефоне затененное розовым фоном со смайликом">
+            <div class="advantages__picture">
+              <picture class="advantages__phone advantages__phone--smile">
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop.png 1x, img/iphone-screen-3-desktop@2x.png 2x ">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-3.png" srcset="img/iphone-screen-3@2x.png 2x" height="320" width="157" alt="фото на телефоне затененное розовым фоном со смайликом">
+              </picture>
+              <picture class="advantages__phone advantages__phone--black-white">
+                <img src="img/black-white-phone.png" srcset="img/black-white-phone@2x.png 2x" height="382" width="300" alt="фото на телефоне черно-белое">
+              </picture>
+              <picture class="advantages__phone advantages__phone--pink">
+                <img src="img/pink-phone.png" srcset="img/pink-phone@2x.png 2x" height="382" width="300" alt="фото на телефоне черно-белое">
+              </picture>
+            </div>
           </div>
 
 
@@ -249,7 +265,12 @@
           </div>
         </div>
         <div class="contacts__img-wrapper">
-          <img class="contacts__map" src="img/map.png" height="200" width="320" alt="местонахождение на карте">
+          <picture class="contacts__map" >
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+            <img src="img/map.png" srcset="img/map@2x.png 2x"height="200" width="320" alt="местонахождение на карте">
+          </picture>
+
         </div>
       </section>
 
