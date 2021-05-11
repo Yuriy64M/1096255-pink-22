@@ -18,6 +18,10 @@
   margin-bottom: 1px;
 }
 
+.header__description-wrapper {
+  position: relative;
+}
+
 .header__logo-image {
   margin: auto 0;
   margin-left: 10px;
@@ -34,18 +38,23 @@
   text-align: center;
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
+  background-size: 320px auto;
 //  object-fit: none;
 //  width: 320px;
 //  height: 462px;
   background-size: auto;
   position: relative;
+  @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-mobile@2x.png");
+      background-size: 320px auto;
+  }
 }
 
 .phone {
   transform: translate(20px, 92px);
   position: absolute;
-  left: -20px;
-  bottom: 328px;
+  left: -44px;
+  bottom: 309px;
 }
 
 .header__image-wrapper img {
@@ -59,7 +68,9 @@
 }
 
 .header__wrapper-2 {
+  position: relative;
   width: 280px;
+  z-index: 2
 }
 
 .header__logo-flex {
@@ -162,13 +173,19 @@
 
 @media (min-width: 660px) {
     .header__header-description {
-      background-size: cover;                     /*фоновую картинку вероятно заменить*/
-    }                                              /*руку вероятно тоже*/
+      background-size: 660px auto;
+        background-image: url("../img/back-tablet.png");
+      @media (min-resolution: 2dppx) {
+          background-image: url("../img/back-tablet@2x.png");
+          background-size: 660px auto;
+      }                                                             /*фоновую картинку вероятно заменить*/
+    }                                                                    /*руку вероятно тоже*/
 
 .header__wrapper-2 {
-module5-task3
   margin: auto;
   width: 620px;
+  text-align: justify;
+
 }
 
     .phone {
@@ -179,8 +196,15 @@ module5-task3
       grid-row-start: 1;
       grid-row-end: -1;
       position: absolute;
-      bottom: -140px;
-      left: -225px;        /*координаты потом изменить*/
+      bottom: -27px;
+      left: -39px;
+      z-index: -1;     /*координаты потом изменить*/
+    }
+
+    .phone img{
+      width: 660px;
+      height: 545px;
+
     }
 
     .header__logo-flex {
@@ -257,14 +281,30 @@ module5-task3
          grid-column-end: 2;
          z-index: 1;
          padding: 0;
+         text-align: center;
 
        }
 }
 
 @media (min-width: 1200px) {
+    .header__header-description {
+      background-image: url("../img/back-desktop.png");
+      background-size: 1200px auto;
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/back-desktop@2x.png");
+        background-size: 1200px auto;
+    }
+    }
+
     .phone {
       width: 1050px;
       height: 645px;
+    }
+
+    .phone img{
+      width: 1050px;
+      height: 645px;
+
     }
 
 .operating-systems {
@@ -278,7 +318,6 @@ module5-task3
 }
 
 .header__wrapper-2 {
- module5-task3
   margin: auto;
   width: 747px;
 }
