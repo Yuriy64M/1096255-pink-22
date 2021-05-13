@@ -70,7 +70,11 @@
 
         <div class="day-photo">
           <a class="day-photo__link-photo" href="#">
-            <img src="img/catalog/panorama-tablet.png" width="320" height="137" alt="панорама с фуникулера">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.png 1x, img/catalog/panorama-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.png 1x, img/catalog/panorama-tablet@2x.png 2x">
+              <img src="img/catalog/panorama.png" srcset="img/catalog/panorama@2x.png 2x" width="320" height="137" alt="панорама с фуникулера">
+            </picture>
           </a>
           <span class="day-photo__text">Панорама дня</span>
           <blockquote class="blockquote blockquote__day-photo">
@@ -86,7 +90,11 @@
         <ul class="quotes">
           <li class="quotes__item">
             <a href="#">
-              <img src="img/catalog/photo-1-mobile.png" width="280" height="180" alt="фото авто">
+              <picture class="quotes__picture">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-mobile-desktop.png 1x, img/catalog/photo-1-mobile-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-1-mobile-tablet.png 1x, img/catalog/photo-1-mobile-tablet@2x.png 2x">
+                <img src="img/catalog/photo-1-mobile.png" srcset="img/catalog/photo-1-mobile@2x.png 2x" width="280" height="180" alt="фото авто">
+              </picture>
             </a>
             <blockquote class="blockquote">
               <div class="blockquote__autor-time">
@@ -100,7 +108,11 @@
           </li>
           <li class="quotes__item">
             <a href="#">
-              <img src="img/catalog/photo-2-drums.png" width="280" height="180" alt="барабанная установка">
+              <picture class="quotes__picture">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-drums-desktop.png 1x, img/catalog/photo-2-drums-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-2-drums-tablet.png 1x, img/catalog/photo-2-drums-tablet@2x.png 2x">
+                <img src="img/catalog/photo-2-drums.png" srcset="img/catalog/photo-2-drums@2x.png 2x" width="280" height="180" alt="барабанная установка">
+              </picture>
             </a>
             <blockquote class="blockquote">
               <div class="blockquote__autor-time">
@@ -114,7 +126,12 @@
           </li>
           <li class="quotes__item">
             <a href="#">
-              <img src="img/catalog/photo-3-sky.png" width="280" height="180" alt="облака за стеклом">
+              <picture class="quotes__picture">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-sky-desktop.png 1x, img/catalog/photo-3-sky-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-3-sky-tablet.png 1x, img/catalog/photo-3-sky-tablet@2x.png 2x">
+                <img src="img/catalog/photo-3-sky.png" srcset="img/catalog/photo-3-sky@2x.png 2x" width="280" height="180" alt="облака за стеклом">
+              </picture>
+
             </a>
             <blockquote class="blockquote">
               <div class="blockquote__autor-time">
@@ -128,7 +145,11 @@
           </li>
           <li class="quotes__item">
             <a href="#">
-              <img src="img/catalog/photo-4-market.png" width="280" height="180" alt="Кубанская бахча">
+              <picture class="quotes__picture">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-market-desktop.png 1x, img/catalog/photo-4-market-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-4-market-tablet.png 1x, img/catalog/photo-4-market-tablet@2x.png 2x">
+                <img src="img/catalog/photo-4-market.png" srcset="img/catalog/photo-4-market@2x.png 2x" width="280" height="180" alt="Кубанская бахча">
+              </picture>
             </a>
             <blockquote class="blockquote">
               <div class="blockquote__autor-time">
@@ -142,7 +163,11 @@
           </li>
           <li class="quotes__item">
             <a href="#">
-              <img src="img/catalog/mountains.png" width="280" height="180" alt="ноги на склоне горы">
+              <picture class="quotes__picture">
+                <source media="(min-width: 1200px)" srcset="img/catalog/mountains-desktop.png 1x, img/catalog/mountains-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/mountains-tablet.png 1x, img/catalog/mountains-tablet@2x.png 2x">
+                <img src="img/catalog/mountains.png" srcset="img/catalog/mountains@2x.png 2x" width="280" height="180" alt="ноги на склоне горы">
+              </picture>
             </a>
             <blockquote class="blockquote">
               <div class="blockquote__autor-time">
@@ -156,7 +181,11 @@
           </li>
           <li class="quotes__item">
             <a href="#">
-              <img src="img/catalog/airplane.png" width="280" height="180" alt="самолет на фоне солнца">
+              <picture class="quotes__picture">
+                <source media="(min-width: 1200px)" srcset="img/catalog/airplane-desktop.png 1x, img/catalog/airplane-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/airplane-tablet.png 1x, img/catalog/airplane-tablet@2x.png 2x">
+                <img src="img/catalog/airplane.png" srcset="img/catalog/airplane@2x.png 2x" width="280" height="180" alt="самолет на фоне солнца">
+              </picture>
             </a>
             <blockquote class="blockquote">
               <div class="blockquote__autor-time">
@@ -173,7 +202,12 @@
       </section>
 
       <section class="your-photo">
-        <img src="img/catalog/winter.png" alt="зимний пейзаж">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/catalog/winter-desktop.png 1x, img/catalog/winter-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/catalog/winter-tablet.png 1x, img/catalog/winter-tablet@2x.png 2x">
+          <img src="img/catalog/winter.png" srcset="img/catalog/winter@2x.png 2x" width="280" height="374" alt="зимний пейзаж">
+        </picture>
+
         <form class="catalog-form" action="index.html" method="post">
           <button class="catalog-form__button" type="button" name="button">
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
